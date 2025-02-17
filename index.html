@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ague - Producer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Collega il file CSS -->
+</head>
+<body>
+
+    <!-- Titolo -->
+    <div class="neon-text">
+        AGUE
+    </div>
+
+    <!-- Navigazione -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About me</a></li>
+            <li><a href="#" onclick="showSection('passion')">Passion</a></li>
+            <li><a href="#" onclick="showSection('goals')">Goals</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sezioni -->
+    <div id="home" class="section">
+        <div class="section-text">
+            Welcome to the official site of Ague, the music producer.
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="section-text">
+            <h2>Mi chiamo Alessandro, in arte Ague, ho 15 anni e vengo da Trapani, in Sicilia. Il 26 settembre 2024 è uscito il mio primo progetto, "Ague is Religion", con cui mi sono avvicinato al rap e alla trap moderna, dando forma al mio stile personale e alla mia visione musicale.</h2>
+        </div>
+    </div>
+
+    <div id="passion" class="section">
+        <div class="section-text">
+            <h2>Fin da piccolo ascolto trap/rap, a 10 anni mi sono avvicinato al mondo della produzione tramite i social. Negli anni ho sperimentato i miei sound tra sonorità cupe e psichedeliche.</h2>
+        </div>
+    </div>
+
+    <div id="goals" class="section">
+        <div class="section-text">
+            Il mio obiettivo è produrre beat esclusivi per artisti affermati e entrare nelle classifiche di successo. Voglio rendere il mio sound immediatamente riconoscibile.
+        </div>
+    </div>
+
+    <div id="projects" class="section">
+        <div class="section-text">
+            <h2>Check out some of my recent projects!</h2>
+            <!-- Player per i file audio -->
+            <div class="audio-player">
+                <h3>G.mp3</h3>
+                <audio controls>
+                    <source src="assets/audio/G.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-player">
+                <h3>Moon.mp3</h3>
+                <audio controls>
+                    <source src="assets/audio/Moon.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <div class="section-text">
+            <h3>Email per collab: <a href="mailto:Alessandroagueci45@gmail.com">Alessandroagueci45@gmail.com</a></h3>
+            <h3>Numero: <a href="tel:+393760836093">+39 376 083 6093</a></h3>
+            <h3>Socials: <br> Instagram: <a href="https://instagram.com/Alessandroaguecii">Alessandroaguecii</a> <br> TikTok: <a href="https://tiktok.com/@Prod_byague">Prod_byague</a> <br> SoundCloud: <a href="https://on.soundcloud.com/EAS2Vq7EAUqWzCod6">SoundCloud Link</a></h3>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            Site created by Osservazione © 2025
+        </div>
+    </footer>
+
+    <script>
+        // Funzione per mostrare la sezione attiva
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
